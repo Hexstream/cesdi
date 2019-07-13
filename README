@@ -1,0 +1,9 @@
+Project's home: https://www.hexstreamsoft.com/libraries/cesdi/
+
+
+cesdi provides a compute-effective-slot-definition-initargs generic function
+that allows for more ergonomic initialization of effective slot definition objects.
+
+
+This library is in the Public Domain.
+See the UNLICENSE file for details.

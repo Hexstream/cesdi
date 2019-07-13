@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="canonical" href="https://www.hexstreamsoft.com/libraries/cesdi/" />
+    <meta name="author" content="Jean-Philippe Paradis" />
+    <link rel="author" href="https://abc.hexstream.xyz/" />
+    <link rel="license" href="https://www.hexstreamsoft.com/UNLICENSE" />
+    <meta name="description" content="Provides a compute-effective-slot-definition-initargs generic function that allows for more ergonomic initialization of effective slot definition objects." />
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>cesdi | Libraries | HexstreamSoft</title>
+    <link href="https://www.hexstreamsoft.com/css/global.css" rel="stylesheet" type="text/css" />
+    <link href="https://www.hexstreamsoft.com/libraries/libraries.css" rel="stylesheet" type="text/css" />
+    <link href="https://global.hexstreamsoft.com/css/cl-definitions.css" rel="stylesheet" type="text/css" />
+    <script src="https://global.hexstreamsoft.com/scripts/global.js"></script>
+    <script src="https://www.hexstreamsoft.com/scripts/global.js"></script>
+    <script src="https://www.hexstreamsoft.com/libraries/libraries.js" defer></script>
+  </head>
+
+  <body>
+
+    <nav id="top-nav">
+
+      <div class="main">
+
+        <div class="breadcrumbs">
+          <a href="https://www.hexstreamsoft.com/">HexstreamSoft</a>
+          <span class="crumb"><span class="s"> » </span><a href="https://www.hexstreamsoft.com/libraries/">Libraries</a></span>
+          <span class="crumb"><span class="s"> » </span><a class="here">cesdi</a></span>
+        </div>
+
+        <nav class="tabs" id="meta-nav">
+          <ul>
+            <li><a class="github" href="https://github.com/Hexstream/cesdi"><span>See on GitHub</span></a></li>
+          </ul>
+        </nav>
+
+      </div>
+
+      <p id="last-updated"><span>This page was last updated on </span><time datetime="2019-07-13">13 july 2019</time><span>.</span></p>
+
+    </nav>
+
+    <main>
+
+      <header id="page-header">
+        <h1>cesdi</h1>
+      </header>
+
+      <div class="tags contains-groups">
+        <div class="group prominent">
+          <span class="tag hv license">
+            <span class="h">License<span>:</span></span>
+            <span class="v">Public Domain</span>
+          </span>
+          <span class="s">, </span>
+          <span class="tag hv quicklisp">
+            <span class="h">Load it with Quicklisp<span>:</span></span>
+            <code class="v">(ql:quickload "cesdi")</code>
+          </span>
+        </div>
+        <div class="group">
+          <span class="tag hv">
+            <span class="h">Library type<span>:</span></span>
+            <span class="v">API design enhancement</span>
+          </span>
+          <span class="s">, </span>
+          <span class="tag hv">
+            <span class="h">Project complexity<span>:</span></span>
+            <span class="v">Simple</span>
+          </span>
+        </div>
+      </div>
+
+      <nav class="tabs" id="further-info">
+        <ul>
+          <li><a href="https://www.hexstreamsoft.com/libraries/releases/latest-versions/#cesdi">Latest release</a></li>
+          <li><a href="https://www.hexstreamsoft.com/libraries/dependencies/#cesdi">Dependencies</a></li>
+        </ul>
+        <ul>
+          <li><a href="https://www.hexstreamsoft.com/libraries/external-pages-xref/#cesdi">External library pages</a></li>
+        </ul>
+      </nav>
+
+      <section id="introduction">
+
+        <p><dfn><code class="relevant">cesdi</code></dfn> provides a compute-effective-slot-definition-initargs generic function<br />that allows for more ergonomic initialization of effective slot definition objects.</p>
+
+      </section>
+
+      <nav class="tabs">
+        <ul>
+          <li><a href="#dictionary">Dictionary</a></li>
+        </ul>
+      </nav>
+
+      <section id="dictionary">
+
+        <h1 class="breadcrumbs-bar">
+          <span class="section-relative-nav">
+            <a href="#dictionary" class="anchor">⚓</a>
+          </span>
+          <span class="breadcrumbs">
+            <a class="here">Dictionary</a>
+          </span>
+        </h1>
+
+        <nav class="tabs">
+          <ul>
+            <li><a href="#dictionary_cesdi"><span class="type">Package</span> <code>cesdi</code></a></li>
+            <li><a href="#dictionary_cesdi-mixin"><span class="type">Class</span> <code>cesdi-mixin</code></a></li>
+            <li><a href="#dictionary_compute-effective-slot-definition-initargs"><span class="type">Generic function</span> <code>compute-effective-slot-definition-initargs</code></a></li>
+            <li><a href="#dictionary_effective-slot-definition-class"><span class="type">Generic function</span> <code>effective-slot-definition-class</code></a></li>
+          </ul>
+        </nav>
+
+        <section id="dictionary_cesdi">
+
+          <h1 class="breadcrumbs-bar">
+            <span class="section-relative-nav">
+              <a href="#dictionary_cesdi" class="anchor">⚓</a>
+            </span>
+            <span class="breadcrumbs">
+              <a href="#dictionary">Dictionary</a>
+              <span class="crumb"><span class="s"> » </span><a class="here">cesdi</a></span>
+            </span>
+          </h1>
+
+          <article class="package definition">
+
+            <h1><span class="type">Package</span> <span class="name self">cesdi</span></h1>
+
+            <section class="description">
+              <h1>Description</h1>
+              <p>All symbols from this package should normally be explicitly qualified, such as <code class="relevant"><a href="#dictionary_compute-effective-slot-definition-initargs">cesdi:compute-effective-slot-definition-initargs</a></code>.<br />Don't <code>(:use)</code>!</p>
+            </section>
+
+          </article>
+
+        </section>
+
+        <section id="dictionary_cesdi-mixin">
+
+          <h1 class="breadcrumbs-bar">
+            <span class="section-relative-nav">
+              <a href="#dictionary_standard-system" class="anchor">⚓</a>
+            </span>
+            <span class="breadcrumbs">
+              <a href="#dictionary">Dictionary</a>
+              <span class="crumb"><span class="s"> » </span><a class="here">cesdi-mixin</a></span>
+            </span>
+          </h1>
+
+          <article class="class definition">
+
+            <h1><span class="type">Class</span> <span class="name self">cesdi:cesdi-mixin</span></h1>
+            <p class="direct-superclasses"><a href="http://www.lispworks.com/documentation/HyperSpec/Body/t_std_cl.htm" target="_blank">c2mop:standard-class</a></p>
+
+            <section class="description">
+              <h1>Description</h1>
+              <p>Classes that inherit from this class participate in the <code class="relevant">cesdi</code> protocol.</p>
+            </section>
+
+          </article>
+
+          <article class="method definition" id="dictionary_cesdi-mixin_compute-effective-slot-definition_cesdi-mixin_t_t">
+
+            <h1><span class="type">Method</span> <span class="name self"><a href="https://clos-mop.hexstreamsoft.com/generic-functions-and-methods/#compute-effective-slot-definition" target="_blank">c2mop:compute-effective-slot-definition</a></span></h1>
+
+            <p class="args-and-retvals">(<var>class</var> <code class="specializer relevant"><a href="#dictionary_cesdi-mixin">cesdi:cesdi-mixin</a></code>) <var>name</var> <var>direct-slot-definitions</var> =&gt; <var>effective-slot-definition</var></p>
+
+            <section class="description">
+              <h1>Description</h1>
+              <p>This method is at the core of <code class="relevant">cesdi</code>. It effectively translates from the old, awkward protocol to the new, ergonomic protocol.</p>
+              <p>
+                This method first calls <code class="relevant"><a href="#dictionary_compute-effective-slot-definition-initargs">cesdi:compute-effective-slot-definition-initargs</a></code> to compute the <var>initargs</var>.
+                <br />
+                It then calls <code class="relevant"><a href="#dictionary_effective-slot-definition-class">cesdi:effective-slot-definition-class</a></code> with the <var>class</var> and <var>initargs</var> to get the <var>effective-slot-definition-class</var>.
+                <br />
+                It then calls the next method to instantiate the <var>effective-slot-definition</var>, arranging for <a href="https://clos-mop.hexstreamsoft.com/generic-functions-and-methods/#effective-slot-definition-class" target="_blank">c2mop:effective-slot-definition-class</a> to receive the <var>effective-slot-definition-class</var> through an internal special variable.
+                <br />
+                It then <em>amends</em> the <var>effective-slot-definition</var> to reflect the <var>initargs</var>, then returns <var>effective-slot-definition</var>.
+              </p>
+            </section>
+
+          </article>
+
+          <article class="method definition" id="dictionary_cesdi-mixin_effective-slot-definition-class_cesdi-mixin_t">
+
+            <h1><span class="type">Method</span> <span class="name self"><a href="https://clos-mop.hexstreamsoft.com/generic-functions-and-methods/#effective-slot-definition-class" target="_blank">c2mop:effective-slot-definition-class</a></span></h1>
+
+            <p class="args-and-retvals">(<var>class</var> <code class="specializer relevant"><a href="#dictionary_cesdi-mixin">cesdi:cesdi-mixin</a></code>) &amp;rest <var>initargs</var> =&gt; <var>slot-definition-class</var></p>
+
+            <section class="description">
+              <h1>Description</h1>
+              <p>Returns the value of the internal special variable bound by the above method.</p>
+            </section>
+
+          </article>
+
+        </section>
+
+        <section id="dictionary_compute-effective-slot-definition-initargs">
+
+          <h1 class="breadcrumbs-bar">
+            <span class="section-relative-nav">
+              <a href="#dictionary_compute-effective-slot-definition-initargs" class="anchor">⚓</a>
+            </span>
+            <span class="breadcrumbs">
+              <a href="#dictionary">Dictionary</a>
+              <span class="crumb"><span class="s"> » </span><a class="here">compute-effective-slot-definition-initargs</a></span>
+            </span>
+          </h1>
+
+          <article class="generic-function definition">
+
+            <h1><span class="type">Generic Function</span> <span class="name self">cesdi:compute-effective-slot-definition-initargs</span></h1>
+
+            <p class="args-and-retvals"><var>class</var> <var>direct-slot-definitions</var> =&gt; <var>initargs</var></p>
+
+            <section class="arguments-and-values">
+              <h1>Arguments and Values</h1>
+              <ul>
+                <li><var>class</var> -- A class.</li>
+                <li><var>direct-slot-definitions</var> -- A list.</li>
+                <li><var>initargs</var> -- A list of initialization arguments and values.</li>
+              </ul>
+            </section>
+
+            <section class="description">
+              <h1>Description</h1>
+              <p>Computes the initargs which will be (conceptually) passed to <a href="http://www.lispworks.com/documentation/HyperSpec/Body/f_mk_ins.htm" target="_blank">make-instance</a> to construct the effective slot definition object.</p>
+              <p>Each of this generic function's primary and around methods, when they return an <var>initargs</var> result, must do so by <a href="http://www.lispworks.com/documentation/HyperSpec/Body/f_call_n.htm" target="_blank">calling the next method</a> and returning that value, optionally preceded by additional initargs that either introduce additional values or override existing values. These methods can inspect the partial initargs list returned by the next method, but must ignore any arguments they don't recognize.</p>
+            </section>
+
+            <section class="methods">
+              <h1>Methods</h1>
+
+              <article class="method definition" id="dictionary_compute-effective-slot-definition-initargs_cesdi-mixin_t">
+
+                <h1><span class="type">Method</span> <span class="name self">cesdi:compute-effective-slot-definition-initargs</span></h1>
+
+                <p class="args-and-retvals">(<var>class</var> <code class="specializer relevant"><a href="#dictionary_cesdi-mixin">cesdi:cesdi-mixin</a></code>) <var>direct-slot-definitions</var> =&gt; <var>initargs</var></p>
+
+                <section class="description">
+                  <h1>Description</h1>
+                  <p>Computes and returns the standard initargs <code>:name</code>, <code>:allocation</code>, <code>:initform</code>, <code>:initfunction</code>, <code>:type</code>, <code>:initargs</code> and <code>:documentation</code> per <a href="http://www.lispworks.com/documentation/HyperSpec/Body/07_ec.htm" target="_blank">CLHS 7.5.3 Inheritance of Slots and Slot Options</a>.</p>
+                </section>
+
+              </article>
+
+            </section>
+
+          </article>
+
+        </section>
+
+        <section id="dictionary_effective-slot-definition-class">
+
+          <h1 class="breadcrumbs-bar">
+            <span class="section-relative-nav">
+              <a href="#dictionary_effective-slot-definition-class" class="anchor">⚓</a>
+            </span>
+            <span class="breadcrumbs">
+              <a href="#dictionary">Dictionary</a>
+              <span class="crumb"><span class="s"> » </span><a class="here">effective-slot-definition-class</a></span>
+            </span>
+          </h1>
+
+          <article class="generic-function definition">
+
+            <h1><span class="type">Generic Function</span> <span class="name self">cesdi:effective-slot-definition-class</span></h1>
+
+            <p class="args-and-retvals"><var>class</var> &amp;rest <var>initargs</var> =&gt; <var>slot-definition-class</var></p>
+
+            <section class="arguments-and-values">
+              <h1>Arguments and Values</h1>
+              <ul>
+                <li><var>class</var> -- A class.</li>
+                <li><var>initargs</var> -- A list of initialization arguments and values.</li>
+                <li><var>slot-definition-class</var> -- A class metaobject which is a subclass of the class <a href="https://clos-mop.hexstreamsoft.com/classes/#effective-slot-definition" target="_blank">c2mop:effective-slot-definition</a>.</li>
+              </ul>
+            </section>
+
+            <section class="description">
+              <h1>Description</h1>
+              <p>This generic function is the <code class="relevant">cesdi</code> counterpart to <a href="https://clos-mop.hexstreamsoft.com/generic-functions-and-methods/#effective-slot-definition-class" target="_blank">c2mop:effective-slot-definition-class</a>.</p>
+              <p>The <var>initargs</var> it receives is the full list of initargs as computed by <code class="relevant"><a href="#dictionary_compute-effective-slot-definition-initargs">cesdi:compute-effective-slot-definition-initargs</a></code>.<br />This is in contrast to <a href="https://clos-mop.hexstreamsoft.com/generic-functions-and-methods/#effective-slot-definition-class" target="_blank">c2mop:effective-slot-definition-class</a>, which receives only the <a href="http://www.lispworks.com/documentation/HyperSpec/Body/07_ec.htm" target="_blank">standard initargs</a>.</p>
+            </section>
+
+            <section class="methods">
+              <h1>Methods</h1>
+
+              <article class="method definition" id="dictionary_effective-slot-definition-class_standard-class_t">
+
+                <h1><span class="type">Method</span> <span class="name self">cesdi:effective-slot-definition-class</span></h1>
+
+                <p class="args-and-retvals">(<var>class</var> <code class="specializer"><a href="http://www.lispworks.com/documentation/HyperSpec/Body/t_std_cl.htm" target="_blank">c2mop:standard-class</a></code>) &amp;rest <var>initargs</var> =&gt; <var>slot-definition-class</var></p>
+
+                <section class="description">
+                  <h1>Description</h1>
+                  <p>Returns the class <a href="https://clos-mop.hexstreamsoft.com/classes/#standard-effective-slot-definition" target="_blank">c2mop:standard-effective-slot-definition</a>.</p>
+                </section>
+
+              </article>
+
+            </section>
+
+          </article>
+
+        </section>
+
+      </section>
+
+    </main>
+
+    <footer id="footer">
+      <div class="back-to-top left">
+        <a href="#">⬆</a>
+      </div>
+      <div class="main">
+        <a href="https://validator.w3.org/check?uri=http%3A%2F%2Fwww.hexstreamsoft.com%2Flibraries%2Fcesdi%2F">✔ HTML5</a>
+        <a href="https://www.hexstreamsoft.com/README">✔ Public Domain</a>
+        <a href="https://jigsaw.w3.org/css-validator/validator?uri=http%3A%2F%2Fwww.hexstreamsoft.com%2Flibraries%2Fcesdi%2F">✔ CSS3</a>
+        <a>✔ Mobile-friendly</a>
+      </div>
+      <div class="back-to-top right">
+        <a href="#">⬆</a>
+      </div>
+    </footer>
+
+  </body>
+</html>
