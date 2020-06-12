@@ -92,7 +92,7 @@
                   (error "~S failed to return the standard initargs tail given class ~S. Initargs:~%~S"
                          'cesdi:compute-effective-slot-definition-initargs class initargs))))))
 
-(defgeneric cesdi:effective-slot-definition-class (class &rest initargs)
+(defgeneric cesdi:effective-slot-definition-class (class &rest initargs &key &allow-other-keys)
   (:method ((class c2mop:standard-class) &rest initargs)
     (declare (ignore class initargs))
     (find-class 'c2mop:standard-effective-slot-definition)))
